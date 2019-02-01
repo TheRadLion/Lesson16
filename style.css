@@ -71,6 +71,7 @@ img {
     transition-duration: 0.5s;
     transition-property: all;
     transition-timing-function: ease;
+    color: aliceblue;
     box-shadow: 3px 3px 6px 0px  rgba(0,0,0,0.3);
 }
 
