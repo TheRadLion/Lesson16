@@ -1,0 +1,163 @@
+* {
+    background-color: rgb(255, 255, 255);
+}
+
+#pagetitle {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+#openingparagraph {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Sanchez', serif;
+}
+
+
+
+
+#img1 {
+    filter: blur(3px);
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+/* Creating picture boxes */
+
+img {
+    width: 100%
+}
+
+.pictures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.picture {
+    background-color: whitesmoke;
+    width: 530px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px 0px  rgba(0,0,0,0.3);
+} 
+
+.picture .text {
+    text-align: center;
+    padding: 0 20px 20px;
+}
+
+/* Picture and button shadow */
+.picture .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.picture:hover {
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease;
+    box-shadow: 3px 3px 6px 0px  rgba(0,0,0,0.3);
+}
+
+button:hover { 
+    box-shadow: 2px 2px 4px 0px  rgba(0,0,0,0.3);
+}
+
+
+.footer {
+    background-color: lavender;
+    text-align: center;
+    padding: 60px;
+}
+
+
+#word {
+    position: absolute;
+    top: 214%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+
+
+
+
+
+/* Creatin a dropdown menu */
+.navbar {
+    background-color: black;
+    width: 100%;
+}
+
+/* Setting the size and style of the dropdown */
+.navbar a, .dropbutton {
+    display: inline-block;
+    padding: 30px 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.dropbutton, .dropdown-content {
+    background-color: black;
+    border: none;
+    min-width: 125;
+}
+
+.navbar a:hover, .dropbutton:hover {
+    background-color: gray;
+}
+
+/* Placing a title in the ceter bar */
+#title {
+    margin: 0px 0px 0px 850px;
+    font-size: 38px;
+    display: inline-block;
+    text-decoration: none;
+    color: gray;
+    background-color: black;
+
+
+}
+
+/* Setting the color and position of the home button */
+#homemenu {
+    float: right;
+    background-color: rgb(124, 191, 211);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.activemenuitem {
+    background-color: rgb(124, 191, 211);
+}

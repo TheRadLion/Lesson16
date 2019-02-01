@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tic Tac Toe Lesson 15</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="tictactoecss.css" />
+  <script defer src="tictactoejs.js"></script>
+</head>
+
+<body>
+  <!-- Dropdown menu -->
+    <nav class="navbar">
+        <span class="dropdown">
+            <button class="dropbutton activemenuitem">Menu</button>
+            <span class="dropdown-content">  
+                <a href="boardgames.html">Board Games Article</a>       
+                <a href=""></a>
+                <a href="">About</a> 
+            </span>
+        </span>
+        <p id="title">Games</p>
+        <a id="homemenu" href="index.html">Home</a>
+   </nav>
+   <!-- Tic Tac Toe Board -->
+  <h1 id="gametitle">Tic Tac Toe Pro</h1>
+  <div class="board">
+    <div>
+      <div id="00" class="sq bottom right"></div>
+      <div id="01" class="sq bottom right"></div>
+      <div id="02" class="sq bottom "></div>
+    </div>
+    <div>
+      <div id="10" class="sq bottom right"></div>
+      <div id="11" class="sq bottom right"></div>
+      <div id="12" class="sq bottom"></div>
+    </div>
+    <div>
+      <div id="20" class="sq right"></div>
+      <div id="21" class="sq right"></div>
+      <div id="22" class="sq"></div>
+    </div>
+  </div>
+  <h2 id="Winner">It is X's turn.</h2>
+  <button onclick="ResetGame();" id="resetGameButton">Reset Game</button>
+  <button onclick="AIPlayerMove();" id="AIPlayerMove">AI Player Move</button>
+</body>
+
+</html>
